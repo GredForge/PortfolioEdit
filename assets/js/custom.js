@@ -64,41 +64,41 @@
 		 * Twitter
 		/* ---------------------------------------------- */
 
-		var twitterConfig = {
-			id: '345170787868762112',
-			domId: '',
-			maxTweets: 3,
-			enableLinks: true,
-			showUser: false,
-			customCallback: handleTweets
-		};
+		// var twitterConfig = {
+		// 	id: '345170787868762112',
+		// 	domId: '',
+		// 	maxTweets: 3,
+		// 	enableLinks: true,
+		// 	showUser: false,
+		// 	customCallback: handleTweets
+		// };
 
-		twitterFetcher.fetch(twitterConfig);
+		// twitterFetcher.fetch(twitterConfig);
 
-		function handleTweets(tweets) {
-			var x = tweets.length;
-			var n = 0;
-			var html = '';
-			while(n < x) {
-				html += '<div class="owl-item">' + tweets[n] + '</div>';
-				n++;
-			}
-			$('.testimonials').html(html);
+		// function handleTweets(tweets) {
+		// 	var x = tweets.length;
+		// 	var n = 0;
+		// 	var html = '';
+		// 	while(n < x) {
+		// 		html += '<div class="owl-item">' + tweets[n] + '</div>';
+		// 		n++;
+		// 	}
+		// 	$('.testimonials').html(html);
 
-			$('.twitter_retweet_icon').html('<i class="fa fa-retweet"></i>');
-			$('.twitter_reply_icon').html('<i class="fa fa-reply"></i>');
-			$('.twitter_fav_icon').html('<i class="fa fa-star"></i>');
+		// 	$('.twitter_retweet_icon').html('<i class="fa fa-retweet"></i>');
+		// 	$('.twitter_reply_icon').html('<i class="fa fa-reply"></i>');
+		// 	$('.twitter_fav_icon').html('<i class="fa fa-star"></i>');
 
-			$('.testimonials').owlCarousel({
-				singleItem: true,
-				navigation: false,
-				pagination: false,
-				slideSpeed : 300,
-				paginationSpeed : 400,
-				autoPlay: 5000,
-				navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
-			});
-		}
+		// 	$('.testimonials').owlCarousel({
+		// 		singleItem: true,
+		// 		navigation: false,
+		// 		pagination: false,
+		// 		slideSpeed : 300,
+		// 		paginationSpeed : 400,
+		// 		autoPlay: 5000,
+		// 		navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+		// 	});
+		// }
 
 		/* ---------------------------------------------- /*
 		 * Initialize shuffle plugin
@@ -205,7 +205,7 @@
 		 * Google Map
 		/* ---------------------------------------------- */
 
-		var mapLocation = new google.maps.LatLng(34.031428,-118.2071542,17);
+		var mapLocation = new google.maps.LatLng(30.307182,-97.755996,17);
 
 		map = new GMaps({
 			streetViewControl : false,
